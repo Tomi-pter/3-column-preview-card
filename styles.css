@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'BSD700';
+    src: url('fonts/BigShouldersDisplayBold.eot');
+    src: url('fonts/BigShouldersDisplayBold.eot') format('embedded-opentype'), url('fonts/BigShouldersDisplayBold.woff2') format('woff2'), url('fonts/BigShouldersDisplayBold.woff') format('woff'), url('fonts/BigShouldersDisplayBold.ttf') format('truetype'), url('fonts/BigShouldersDisplayBold.svg#BigShouldersDisplayBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LexendDecaRegular';
+    src: url('fonts/LexendDecaRegular.eot');
+    src: url('fonts/LexendDecaRegular.eot') format('embedded-opentype'), url('fonts/LexendDecaRegular.woff2') format('woff2'), url('fonts/LexendDecaRegular.woff') format('woff'), url('fonts/LexendDecaRegular.ttf') format('truetype'), url('fonts/LexendDecaRegular.svg#LexendDecaRegular') format('svg');
+}

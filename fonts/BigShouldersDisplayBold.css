@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BigShouldersDisplayBold';
+    src: url('fonts/BigShouldersDisplayBold.eot');
+    src: url('fonts/BigShouldersDisplayBold.eot') format('embedded-opentype'),
+         url('fonts/BigShouldersDisplayBold.woff2') format('woff2'),
+         url('fonts/BigShouldersDisplayBold.woff') format('woff'),
+         url('fonts/BigShouldersDisplayBold.ttf') format('truetype'),
+         url('fonts/BigShouldersDisplayBold.svg#BigShouldersDisplayBold') format('svg');
+}
