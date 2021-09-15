@@ -5,7 +5,150 @@
 }
 
 @font-face {
-    font-family: 'LexendDecaRegular';
+    font-family: 'LDR';
     src: url('fonts/LexendDecaRegular.eot');
     src: url('fonts/LexendDecaRegular.eot') format('embedded-opentype'), url('fonts/LexendDecaRegular.woff2') format('woff2'), url('fonts/LexendDecaRegular.woff') format('woff'), url('fonts/LexendDecaRegular.ttf') format('truetype'), url('fonts/LexendDecaRegular.svg#LexendDecaRegular') format('svg');
 }
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-darkC: hsl(179, 100%, 13%);
+    --p-transparent: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+    --font-size: 15px;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+}
+
+.cars {
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+    font-family: 'LDR';
+}
+
+.info {
+    padding: 2rem 2.5rem;
+    color: var(--p-transparent);
+}
+
+.info h1 {
+    font-family: 'BSD700';
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info>button {
+    display: block;
+    background-color: var(--light-gray);
+    padding: .75rem 1.85rem;
+    margin: 1rem 0 0;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'LDR';
+    font-weight: 600;
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+}
+
+.sedan button {
+    color: var(--bright-orange);
+}
+
+.sedan::before {
+    content: url(images/icon-sedans.svg);
+}
+
+.suv {
+    background-color: var(--dark-cyan);
+}
+
+.suv button {
+    color: var(--dark-cyan);
+}
+
+.suv::before {
+    content: url(images/icon-suvs.svg);
+}
+
+.luxury {
+    background-color: var(--very-darkC);
+}
+
+.luxury button {
+    color: var(--very-darkC);
+}
+
+.luxury::before {
+    content: url(images/icon-luxury.svg);
+}
+
+
+/*Hover states*/
+
+.info>button:hover,
+.info>button:focus {
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*Desktop (wider screens) design*/
+
+@media screen and (min-width: 881px) {
+    .cars {
+        flex-direction: row;
+        max-width: 70%;
+    }
+    .info p {
+        margin-bottom: 5rem;
+    }
+    /* Remove scroll bar visually but keep functionality*/
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    /* Firefox and IE fallback*/
+    html {
+        scrollbar-width: none;
+    }
+}
+
+@media screen and (max-width: 880px) and (max-height: 900px) {
+    .cars {
+        margin: 3rem auto;
+    }
+}
+
+
+/*.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}*/
